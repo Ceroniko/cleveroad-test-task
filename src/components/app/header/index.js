@@ -1,1 +1,1 @@
-export { View as Header } from "./view";
+export { Header } from "./container";

@@ -17,7 +17,7 @@ const View = () => {
           <Col>
             <Navlink />
           </Col>
-          <Col>login</Col>
+          <Col></Col>
         </Row>
       </Col>
     </Row>
