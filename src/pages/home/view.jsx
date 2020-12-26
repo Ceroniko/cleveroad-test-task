@@ -1,8 +1,13 @@
 import React from "react";
-import { LoginForm } from "../../components";
+import { LoginForm, RegistrationForm } from "../../components";
 
 const View = (props) => {
-  return <LoginForm />;
+  return (
+    <div>
+      <LoginForm />
+      <RegistrationForm />
+    </div>
+  );
 };
 
 export { View };

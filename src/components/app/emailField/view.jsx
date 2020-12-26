@@ -7,7 +7,7 @@ const View = ({ input, meta }) => {
     <Form.Item
       name="Email"
       required
-      help="Введите любую корректную электронную почту"
+      extra="Введите любую корректную электронную почту"
       rules={[
         {
           required: true,

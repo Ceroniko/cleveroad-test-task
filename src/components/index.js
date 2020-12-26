@@ -5,3 +5,4 @@ export { EmailField } from "./app/emailField";
 export { PassField } from "./app/passField";
 export { SubmitPassField } from "./app/submitPassField";
 export { LoginForm } from "./app/loginForm";
+export { RegistrationForm } from "./app/registrationForm";
