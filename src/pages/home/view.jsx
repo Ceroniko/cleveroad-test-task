@@ -1,7 +1,8 @@
 import React from "react";
+import { LoginForm } from "../../components";
 
 const View = (props) => {
-  return <div>Hello world!</div>;
+  return <LoginForm />;
 };
 
 export { View };
