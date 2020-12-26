@@ -6,3 +6,4 @@ export { PassField } from "./app/passField";
 export { SubmitPassField } from "./app/submitPassField";
 export { LoginForm } from "./app/loginForm";
 export { RegistrationForm } from "./app/registrationForm";
+export { AuthProvider, AuthContext } from "./app/authProvider";

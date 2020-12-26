@@ -5,13 +5,15 @@ import { Provider } from "react-redux";
 import { store } from "./store";
 import { ConnectedRouter } from "connected-react-router";
 import { history } from "./routes/history";
-import { Root } from "./components";
+import { Root, AuthProvider } from "./components";
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <ConnectedRouter history={history}>
-        <Root />
+        <AuthProvider>
+          <Root />
+        </AuthProvider>
       </ConnectedRouter>
     </Provider>
   </React.StrictMode>,
