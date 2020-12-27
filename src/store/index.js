@@ -11,8 +11,8 @@ const enhancers = ALLOW_REDUX_DEVTOOLS_EXTENSION
   ? composeWithDevTools(reduxMiddleware)
   : reduxMiddleware;
 
-const configureStore = (preloadedState = {}) => {
-  return createStore(createRootReducer(history), preloadedState, enhancers);
+const configureStore = () => {
+  return createStore(createRootReducer(history), {}, enhancers);
 };
 
 const store = configureStore();

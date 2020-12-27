@@ -19,4 +19,4 @@ export const FIREBASE_PROJECT_ID = process.env.REACT_APP_FIREBASE_PROJECT_ID;
 export const FIREBASE_STORAGE_BUCKET =
   process.env.REACT_APP_FIREBASE_STORAGE_BUCKET;
 export const FIREBASE_SENDER_ID = process.env.REACT_APP_FIREBASE_SENDER_ID;
-console.log(process.env);
+export const FIREBASE_APP_ID = process.env.REACT_APP_FIREBASE_APP_ID;

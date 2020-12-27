@@ -4,6 +4,7 @@ import { Field } from "redux-form";
 import { EmailField } from "../emailField";
 import { PassField } from "../passField";
 import app from "../../../firebase/base";
+import { history } from "../../../routes/history";
 
 const View = ({ login }) => {
   const handleSignIn = async () => {
@@ -11,6 +12,7 @@ const View = ({ login }) => {
       await app
         .auth()
         .signInWithEmailAndPassword(login.values.email, login.values.password);
+      history.push("/");
     } catch (e) {
       alert(e);
     }

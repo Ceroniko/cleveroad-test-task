@@ -8,15 +8,13 @@ import { history } from "./routes/history";
 import { Root, AuthProvider } from "./components";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <ConnectedRouter history={history}>
-        <AuthProvider>
-          <Root />
-        </AuthProvider>
-      </ConnectedRouter>
-    </Provider>
-  </React.StrictMode>,
+  <Provider store={store}>
+    <ConnectedRouter history={history}>
+      <AuthProvider>
+        <Root />
+      </AuthProvider>
+    </ConnectedRouter>
+  </Provider>,
   document.getElementById("root")
 );
 
