@@ -23,16 +23,18 @@ const View = ({ registration }) => {
   };
 
   return (
-    <Form onFinish={handleSignUp}>
-      <Field name="email" component={EmailField} />
-      <Field name="password" component={PassField} />
-      <SubmitPassField />
-      <Form.Item>
-        <Button type="primary" htmlType="submit">
-          Sign In
-        </Button>
-      </Form.Item>
-    </Form>
+    <div style={{ width: "500px" }}>
+      <Form onFinish={handleSignUp}>
+        <Field name="email" component={EmailField} />
+        <Field name="password" component={PassField} />
+        <SubmitPassField />
+        <Form.Item>
+          <Button type="primary" htmlType="submit">
+            Зарегистрироваться
+          </Button>
+        </Form.Item>
+      </Form>
+    </div>
   );
 };
 

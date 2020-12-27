@@ -7,7 +7,7 @@ const View = ({ input, meta }) => {
     <Form.Item
       name="password"
       required
-      help="Введите любой корректный пароль"
+      extra="Введите любой корректный пароль"
       rules={[
         {
           required: true,

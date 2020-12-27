@@ -1,21 +1,20 @@
-import React from "react";
-import app from "../../firebase/base";
+import React, { useContext } from "react";
+import { ListCard } from "../../components";
+import { AuthContext } from "../../components";
 
-const View = (props) => {
-  React.useEffect(() => {
-    const fetchData = async () => {
-      const db = app.firestore();
-      const data = await db.collection("products").get();
-      console.log(data.docs.map((doc) => ({ ...doc.data() })));
-
-      db.collection("products").add({
-        title: "Apple iphone",
-      });
-    };
-    fetchData();
-  }, []);
-
-  return <div>HomePage</div>;
+const View = () => {
+  const { currentUser } = useContext(AuthContext);
+  return (
+    <div>
+      {!!currentUser ? (
+        <ListCard />
+      ) : (
+        <h1 align="center">
+          Войдите в свой аккаунт или зарегистрируйте новый!
+        </h1>
+      )}
+    </div>
+  );
 };
 
 export { View };

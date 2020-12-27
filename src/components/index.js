@@ -7,3 +7,8 @@ export { SubmitPassField } from "./app/submitPassField";
 export { LoginForm } from "./app/loginForm";
 export { RegistrationForm } from "./app/registrationForm";
 export { AuthProvider, AuthContext } from "./app/authProvider";
+export { AddProductsForm } from "./app/addProductsForm";
+export { ImgUpload } from "./app/imgUpload";
+export { CardProducts } from "./app/cardProducts";
+export { ListCard } from "./app/listCard";
+export { UpdateProductsForm } from "./app/updateProduct";

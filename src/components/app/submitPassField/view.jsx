@@ -8,6 +8,7 @@ const View = ({ input, meta }) => {
       name="confirm"
       dependencies={["password"]}
       required
+      extra="Повторите пароль, для подверждения корректности его ввода"
       rules={[
         {
           required: true,
